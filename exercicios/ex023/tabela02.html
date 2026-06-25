@@ -11,10 +11,16 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         td, th{
             padding: 10px;
@@ -23,6 +29,17 @@
         .num{
             text-align: right;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        .dadospp{
+            width: 100px;
+        }
     </style>
 
     
@@ -30,9 +47,10 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>população das unidades federativas</caption>
         <thead>
-            <th>estado</th>
-            <th>população</th>
+            <th scope="col">estado</th>
+            <th scope="col" class="dadospp">população</th>
         </thead>
         <tbody>
 <tr>
@@ -50,7 +68,7 @@
         </tbody>
         <tfoot>
  <tr>
-   <th>total de habitantes</th>
+   <th scope="row">total de habitantes</th>
    <td class="num">000000</td>
 
         </tfoot>
