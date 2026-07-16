@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>teste de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <div>
            <label for="iest">estado:</label> 
            <select name="est" id="iest">
@@ -34,10 +34,15 @@
                 <option value="DEV">Desenvolvedor</option>
             </datalist>
         </div>
+         <p>
+            <label for="imsg">mensagem:</label> <br>
+             <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
         <p>
             <input type="submit" value="enviar">
             <input type="reset" value="limpar">
         </p>
+
     </form>
 </body>
 </html>
