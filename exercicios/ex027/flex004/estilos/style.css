@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
 div.container{
+    height: 200px;
     display: flex;
     background-color: lightsalmon;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 div.item{
-    padding: 10px;
     background-color: lightblue;
     border: 1px solid black;
     text-align: center;
-    flex: auto;
 }
