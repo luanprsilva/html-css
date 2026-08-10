@@ -6,8 +6,21 @@ div.container{
     flex-flow: row nowrap;
 }
 div.item{
+
     background-color: lightblue;
     border: 1px solid black;
     text-align: center;
-    flex-basis: 150px;
+    flex-basis: 200px;
+}
+div#cxA{
+    flex-shrink: ;
+    flex-grow: 0;
+}
+div#cxB{
+    flex-shrink: ;
+    flex-grow: 2;
+}
+div#cxC{
+    flex-shrink: ;
+    flex-grow: 4;
 }
