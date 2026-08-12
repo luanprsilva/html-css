@@ -22,18 +22,17 @@ header{
     justify-content: space-between;
     align-items: center;
 }header > h1{
-    border: 1px dotted black;
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 header > nav{
-    border: 1px dotted black;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
 header > nav > a{
-    background-color: rgb(86, 86, 86);
+    background-color: rgba(0, 0, 0, 0.838);
     color: white;
     padding: 10px;
     margin: 5px;
@@ -52,4 +51,6 @@ main{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.411);
+    width: 70vw;
+    margin: auto;
 }
